@@ -1,0 +1,17 @@
+name: Print "working"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-working:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Print "working"
+      run: echo "working"
